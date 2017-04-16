@@ -1,8 +1,8 @@
 import java.util.ArrayList;
-public class asteroids {
+public class Asteroids {
 	private static final double windowHeight = 500.0;
 	private static final double windowWidth = 500.0;
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<FlyingObject> object = new ArrayList<FlyingObject>();
@@ -10,7 +10,7 @@ public class asteroids {
 		object.add(player);
 		createRocks(object);
 	}
-	
+
 	private static void createRocks(ArrayList<FlyingObject> object) {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < 4; i++) {
@@ -21,10 +21,10 @@ public class asteroids {
 					Math.random()*2-1
 					));
 		}
-		
+
 	}
 
 	private void gameLoop(ArrayList<FlyingObject> object){
-		
+
 	}
 }
