@@ -1,5 +1,8 @@
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class FlyingObject extends Point{
+	protected Image img;
 	private double dx,dy,rotation;
 	private boolean alive;
 //	Constructors
@@ -10,6 +13,7 @@ public class FlyingObject extends Point{
 		this.dy=0.0;
 		this.rotation=0;
 		this.alive=true;
+		this.img=new Image("question.png");
 	}
 	public FlyingObject(double x, double y) {
 		// TODO Auto-generated constructor stub
@@ -18,6 +22,7 @@ public class FlyingObject extends Point{
 		this.dy=0.0;
 		this.rotation=0;
 		this.alive=true;
+		this.img=new Image("question.png");
 	}
 	public FlyingObject(double x, double y,double dx, double dy) {
 		// TODO Auto-generated constructor stub
@@ -26,6 +31,7 @@ public class FlyingObject extends Point{
 		this.dy=dy;
 		this.rotation=0;
 		this.alive=true;
+		this.img=new Image("question.png");
 	}
 	public FlyingObject(double x, double y,double dx, double dy,double rotation) {
 		// TODO Auto-generated constructor stub
@@ -34,6 +40,7 @@ public class FlyingObject extends Point{
 		this.dy=dy;
 		this.rotation=Math.toRadians(rotation);
 		this.alive=true;
+		this.img=new Image("question.png");
 	}
 	public FlyingObject(double x, double y,double dx, double dy,double rotation,double thrust) {
 		// TODO Auto-generated constructor stub
@@ -43,6 +50,7 @@ public class FlyingObject extends Point{
 		this.rotation=Math.toRadians(rotation);
 		addThrust(thrust);
 		this.alive=true;
+		this.img=new Image("question.png");
 	}
 //	get/set
 	public double getdx()		{	return this.dx;			}
